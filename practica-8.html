@@ -1,0 +1,39 @@
+<!DOCTYPE html><!--informa al navegador qué versión de HTML (o XML) se usó para escribir el documento.-->
+<html lang="es"><!--el atributo lang dentro de la etiqueta de html se utiliza para hacer referencia al idioa
+    en este caso estamos usando el idioma español-->
+<head><!--La etiqueda head se utiliza para contener meta datos  tales como link, title y script-->
+    <meta charset="UTF-8"><!--se usa el atributo charset="UTF-8" que sirve para especificar el conjunto 
+    de caracteres que se utilizará para interpretar el contenido del documento HTML.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--en HTML ajusta la página web 
+        para adaptarse al ancho del dispositivo y establece un nivel inicial de escala adecuado en 
+        dispositivos móviles. -->
+    <title>Batman</title><!--Con esta línea decimos que el titulo de la pestaña en la pagina se llamará
+        lo que está entre la etiqueta de apertura y cierre-->
+    <link rel="icon" 
+    href="C:\Users\user\Desktop\cosas de la escuela\semestre 6\Programación Web\practica 8\imagenes/iconoBatman.PNG">
+    <!--Este código HTML establece un ícono para la pestaña del navegador.
+    link rel="icon": Indica que el elemento es un ícono, href="ruta_del_archivo": Especifica la ubicación del 
+    archivo de imagen que se usará como ícono.-->
+    <link rel="stylesheet" type="text/css" href="CSS/Style2.css"><!--vincula la hoja de estilos externa que se había
+    creado en la carpeta raíz con el nombre de CSS y de ahí al archcivo Style2.css al documento HTML.-->
+</head><!--con esta etiqueta de cierre indicamos que queremos que hasta acá queremos que sea todo el 
+    encabezado o los elementos que se ocuparán en el cuerpo-->
+<body><!--la etiqueda body se utiliza para todo el contenido visible por el usuario-->
+    <div class="video-contenedor"><!--Creamos un contenedor y le asignamos una clase o identificador-->
+        <iframe  class="video-fondo" width="560" height="315" 
+        src="https://www.youtube.com/embed/rrmUk2YUm14?autoplay=1&mute=1&loop=1&playlist=rrmUk2YUm14"
+        frameborder="0" allowfullscreen></iframe><!--<iframe>: Define un área en la página web donde se puede cargar 
+        otro documento HTML, como un video de YouTube, class="video-fondo": Aplica una clase CSS al iframe para aplicar 
+        estilos específicos, width="560" height="315": Establece el ancho y la altura del iframe en píxeles,
+        src="URL_del_video": Especifica la URL del video de YouTube que se mostrará en el iframe.
+        frameborder="0": Elimina el borde del iframe, allowfullscreen: Permite que el video se reproduzca en pantalla
+        completa si el usuario lo solicita.-->
+    </div><!--Cerramos la etiqueta del contendor-->
+    <div class="contenido"><!--Creamos otro contenedor con un "class" o identificador-->
+        <h2>Batman, el caballero de la noche</h2><!--Creamos un subtitulo o un "h2"-->
+        <img src="C:\Users\user\Desktop\cosas de la escuela\semestre 6\Programación Web\practica 8\imagenes/batman.jpg" 
+        alt="Descripción de la imagen"><!--Luego solamente agregamos una imagen y un 
+        mensaje en caso de no encontrarla-->
+    </div><!--Cerramos la etiqueta del contendor-->
+</body><!--En esta etiqueta indicamos que hasta aquí llegará la estructura visible de nuestra página web-->
+</html><!--En esta etiqueta indicamos que hasta aquí llegará la estructura visible de nuestra página web-->

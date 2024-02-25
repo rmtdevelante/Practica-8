@@ -1,0 +1,66 @@
+body {/*Se utiliza el body para el formato de toda la pagina en este caso no se usa el putno puesto que no hay 
+    un class*/
+    margin: 0;/*Establece los márgenes del elemento en 0, eliminando cualquier margen predeterminado.*/
+    padding: 0;/*Establece el relleno del elemento en 0, eliminando cualquier relleno predeterminado.*/
+    font-family: Arial, sans-serif;/*Define la fuente del texto del elemento como Arial, una fuente serif,
+    o una fuente genérica sans-serif si Arial no está disponible.*/
+    display: flex;/*se utiliza para que podamos manipular el div a nuestro antojo*/
+    justify-content: center;/*Centra horizontalmente los elementos dentro del contenedor.*/
+    align-items: center;/*Centra verticalmente los elementos dentro del contenedor.*/
+    height: 100vh;/*Establece la altura del contenedor al 100% del tamaño de la ventana del navegador, 
+    lo que significa que ocupará toda la altura visible de la pantalla.*/
+    overflow: hidden; /* Para evitar el desplazamiento horizontal */
+}
+
+.video-contenedor {/*Como se define una clase dentro del contenedor podemos manipularlo desde el css*/
+    position: fixed;/*Establece la posición del elemento de manera fija en relación con la ventana del navegador, 
+    lo que significa que el elemento permanecerá en la misma posición incluso si la página se desplaza.*/
+    top: 0;/*ca el elemento en la parte superior del contenedor padre, justo en el borde superior.*/
+    left: 0;/*Coloca el elemento en el lado izquierdo del contenedor padre, justo en el borde izquierdo.*/
+    width: 100%;/* Esta regla establece el ancho del elemento al 100% del ancho de su contenedor padre. 
+    Esto significa que el elemento ocupará todo el ancho disponible dentro de su contenedor padre.  */
+    height: 100%;/*Esta regla establece la altura del elemento al 100% de la altura de su contenedor padre. 
+    Esto significa que el elemento ocupará toda la altura disponible dentro de su contenedor padre.*/
+    z-index: -1;/*Establece el índice Z del elemento, que controla su apilamiento en relación con otros 
+    elementos en la página. Un valor negativo (-1 en este caso) coloca el elemento detrás de otros elementos.*/
+}
+
+.video-fondo {/*Como le dimos una clase en el iframe podemos modificar o estilar el mismo desde aquí*/
+    width: 100%;/* Esta regla establece el ancho del elemento al 100% del ancho de su contenedor padre. 
+    Esto significa que el elemento ocupará todo el ancho disponible dentro de su contenedor padre.  */
+    height: 100%;/*Esta regla establece la altura del elemento al 100% de la altura de su contenedor padre. 
+    Esto significa que el elemento ocupará toda la altura disponible dentro de su contenedor padre.*/
+}
+
+.contenido {/*Como se creó un "class" dentro del contenedor div en el css podemos modificarlo a gusto*/
+    text-align: center;/*Centra el texto horizontalmente dentro del elemento.*/
+    padding: 20px;/* Agrega un espacio de 20 píxeles entre el contenido del elemento y sus bordes.*/
+    border-radius: 15px;/*Aplica un radio de borde de 15 píxeles, redondeando las esquinas del elemento.*/
+    z-index: 1;/* Establece el índice Z del elemento, controlando su apilamiento en relación con otros elementos.
+    Un valor más alto coloca el elemento sobre otros elementos.*/
+    color: white;/*Establece el color del texto dentro del elemento como blanco.*/
+    background-color: rgba(255, 255, 255, 0.5);/*Establece el color de fondo del elemento como blanco con un nivel
+     de opacidad del 50% (el valor rgba(255, 255, 255, 0.5) representa blanco con una opacidad del 50%).*/
+    width: 500px;/*Establece el ancho del elemento en 500 píxeles.*/
+    height: 250px;/* Establece la altura del elemento en 250 píxeles.*/
+    margin: 0 auto; /* Centra horizontalmente */
+    border: 2px dashed #00FFFF; /* Borde punteado de color azul neón */
+}
+.contenido h2 {/*Dentro del contenedor creamos un "h2" o un sub titulo y como se le asignó un "class" significa
+    que podemos estilarlo desde aquí.*/
+    color: #39ff14; /* Color de la letra neón */
+    font-size: 24px;/* Establece el tamaño del texto dentro del elemento en 24 píxeles. Esto determina la altura
+    de las letras y otros caracteres en el texto.*/
+}
+
+.contenido img {/*A su vez cómo le dimos una imagen dentro del contenedor podemos modificarla desde aquí*/
+    border-radius: 50%; /*Esto establece el radio del borde del elemento al 50% de su tamaño. En otras palabras, 
+    redondeará completamente las esquinas del elemento, lo que resultará en un elemento circular si es un cuadro.*/
+    width: 200px; /* Esto establece el ancho del elemento en 200 píxeles. Independientemente de si el contenido es
+    más pequeño o más grande, el ancho del elemento será siempre de 200 píxeles.*/
+    height: auto;/*Esto ajusta automáticamente la altura del elemento para mantener la relación de aspecto original
+    del contenido. Si el contenido es más alto que 200 píxeles, la altura del elemento se ajustará para adaptarse
+    al contenido, manteniendo el ancho en 200 píxeles. */
+    float: left; /* Alinea la imagen a la izquierda */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
